@@ -55,7 +55,7 @@ class VideoTranslationClient:
 if __name__ == "__main__":
 	serverUrl = "http://127.0.0.1:5000"
 
-	client = VideoTranslationClient(serverUrl=serverUrl, maxRetries=10, initialDelay=1, backoffFactor=2)
+	client = VideoTranslationClient(serverUrl=serverUrl, maxRetries=100, initialDelay=1, backoffFactor=2)
 
 	result, timeElapsed = client.getStatus()
 	print(f"\nFinal Status: {result}\nTotal time elapsed: {timeElapsed} seconds\n")
