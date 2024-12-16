@@ -1,6 +1,6 @@
 # HeyGen Exercise
 
-This repository demonstrates a simulated server and a client library for getting the status of a video translation job. The server simulates a long running job that stays in "pending" state for a configured amount of time - "delay", then switches to either "completed" or "error". The client library gets the status from this server and uses exponential backoff to prevent excessive load on the server by increasing the delay time between each API call.
+This repository demonstrates a simulated server and a client library for getting the status of a video translation job. The server simulates a long running job that stays in the "pending" state for a configured amount of time - "pendingTime", then switches to either "completed" or "error". The client library gets the status from this server and uses exponential backoff to prevent excessive load on the server by increasing the delay time between each API call.
 
 ## Components
 
