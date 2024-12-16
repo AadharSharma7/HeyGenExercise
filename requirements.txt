@@ -1,0 +1,4 @@
+# Requires Python 3.9.5 or above
+Flask>=3.1.0
+requests>=2.26.0
+pytest>=8.3.4
